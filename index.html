@@ -1037,7 +1037,7 @@ function doUnlock(){
       this.y  = init ? Math.random() * H : H + 40;
       this.s  = Math.random() * 24 + 9;      // tamaño grande: 9–33px
       this.vy = Math.random() * .8 + .3;
-      this.a  = Math.random() * .25 + .08;    // opacidad alta
+      this.a  = Math.random() * .15 + .05;    // opacidad alta
       this.c  = COLS[Math.floor(Math.random() * COLS.length)];
       this.wb = Math.random() * Math.PI * 2;
       this.ws = .012 + Math.random() * .022;
@@ -1047,7 +1047,7 @@ function doUnlock(){
       ctx.save();
       ctx.globalAlpha = this.a;
       ctx.shadowColor = this.c;
-      ctx.shadowBlur  = s * 0.3;             // glow fuerte
+      ctx.shadowBlur  = s * 0.15;             // glow fuerte
       ctx.fillStyle   = this.c;
       ctx.beginPath();
       ctx.moveTo(x, y+t);
